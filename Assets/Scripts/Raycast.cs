@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,9 +8,17 @@ using UnityEngine.VR;
 public class Raycast : MonoBehaviour {
 
 	public float sightlength;
+	public float selectDelay;
+
+	private float startTime;
+	private string lookingAt;
+
+	private bool isPressed;
+
+	public GameObject Core;
 
 	void Start () {
-
+		isPressed = false;
 	}
 
 	void Update () {
@@ -18,12 +27,33 @@ public class Raycast : MonoBehaviour {
 		Ray raydirection = new Ray (transform.position, transform.forward);
 		
 		if (Physics.Raycast(raydirection, out seen, sightlength)) {
-			if (seen.collider.name == "Target1") {
-				Debug.Log ("This is target number 1");
-			} else if (seen.collider.name == "Target2") {
-				Debug.Log ("This is target number 2");
-			}
+			if (seen.collider.tag == "button") {
+				if (lookingAt == seen.collider.name) {
+					Debug.Log ("Keep looking at " + seen.collider.name + "...");
+					if (Time.time > startTime + selectDelay) {
+						
+						Debug.Log ("Selected " + seen.collider.name);
+						int familySelected = Int32.Parse(seen.collider.name.Substring((seen.collider.name.Length - 1), 1));
+						Debug.Log (familySelected);
 
+						if (!isPressed) {
+							Core.GetComponent<Engine>().InitializeDrops (familySelected);
+							isPressed = true;
+						}
+
+						
+						// un truc
+					}
+				} else {
+					startTime = Time.time;
+					lookingAt = seen.collider.name;
+					Debug.Log ("Started to look at " + seen.collider.name);
+					isPressed = false;
+				}
+			} else {
+				//Debug.Log ("Looking at nothing...");
+				lookingAt = "";
+			}
 		}
 	}
 }
