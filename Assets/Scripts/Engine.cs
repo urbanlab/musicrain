@@ -5,7 +5,10 @@ using UnityEngine;
 public class Engine : MonoBehaviour {
 
 	public GameObject Drop;
-	public float dropDelay = 1000;
+
+	public GameObject[] Families;
+
+	public float dropDelay = 1;
 
 	public float height = 1;
 
