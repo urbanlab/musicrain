@@ -1,151 +1,173 @@
 <partition>
     <bpm>120<bpm>
     <family id="1">
+
         <track id="1">
-            <duration>1</duration>
+            <duration>1.989</duration>
             <color>0</color>
-            <rythm>10101010</ryhtm>
+            <rythm>10101010</rythm>
         </track>
+
         <track id="2">
-            <duration>1</duration>
+            <duration>1.989</duration>
             <color>0</color>
-            <rythm>10000000</ryhtm>
+            <rythm>10101010</rythm>
         </track>
+
         <track id="3">
-            <duration>1</duration>
+            <duration>1.414</duration>
             <color>0</color>
-            <rythm>10101010</ryhtm>
+            <rythm>10101010</rythm>
         </track>
+
         <track id="4">
-            <duration>1</duration>
-            <color>1</color>
-            <rythm>10101010</ryhtm>
+            <duration>0.669</duration>
+            <color>0</color>
+            <rythm>10101010</rythm>
         </track>
+
         <track id="5">
-            <duration>1</duration>
-            <color>1</color>
-            <rythm>10101010</ryhtm>
+            <duration>0.606</duration>
+            <color>0</color>
+            <rythm>10101010</rythm>
         </track>
+
         <track id="6">
-            <duration>1</duration>
+            <duration>5.968</duration>
             <color>2</color>
-            <rythm>10101010</ryhtm>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="7">
-            <duration>1</duration>
-            <color>2</color>
-            <rythm>10101010</ryhtm>
+            <duration>1.989</duration>
+            <color>0</color>
+            <rythm>10101010</rythm>
         </track>
+
         <track id="8">
-            <duration>1</duration>
-            <color>2</color>
-            <rythm>10101010</ryhtm>
+            <duration>0.155</duration>
+            <color>0</color>
+            <rythm>10101010</rythm>
         </track>
     </family>
+
+
     <family id="2">
+
         <track id="1">
-            <duration>1</duration>
+            <duration>3.978</duration>
             <color>0</color>
-            <rythm>10101010</ryhtm>
+            <rythm>10001000</rythm>
         </track>
+
         <track id="2">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>7.957</duration>
+            <color>1</color>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="3">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>7.957</duration>
+            <color>1</color>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="4">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>7.957</duration>
+            <color>1</color>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="5">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>30.912</duration>
+            <color>2</color>
+            <rythm>10000000</rythm>
         </track>
-        <track id="6">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
-        </track>
-        <track id="7">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
-        </track>
-        <track id="8">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
-        </track>
+
     </family>
+
+
     <family id="3">
+
         <track id="1">
-            <duration>1</duration>
+            <duration>1.989</duration>
             <color>0</color>
-            <rythm>10101010</ryhtm>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="2">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>1.989</duration>
+            <color>1</color>
+            <rythm>10001000</rythm>
         </track>
+
         <track id="3">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>7.957</duration>
+            <color>1</color>
+            <rythm>10001000</rythm>
         </track>
+
         <track id="4">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>3.978</duration>
+            <color>2</color>
+            <rythm>10101010</rythm>
         </track>
+
         <track id="5">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>1.989</duration>
+            <color>2</color>
+            <rythm>10001000</rythm>
         </track>
+
         <track id="6">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>1.989</duration>
+            <color>1</color>
+            <rythm>10101010</rythm>
         </track>
+
+        <track id="6">
+            <duration>1.989</duration>
+            <color>1</color>
+            <rythm>10101010</rythm>
+        </track>
+
     </family>
     <family id="4">
+
         <track id="1">
-            <duration>1</duration>
+            <duration>3.978</duration>
             <color>0</color>
-            <rythm>10101010</ryhtm>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="2">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>7.957</duration>
+            <color>1</color>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="3">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>1.989</duration>
+            <color>1</color>
+            <rythm>10001000</rythm>
         </track>
+
         <track id="4">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>3.978</duration>
+            <color>2</color>
+            <rythm>10001000</rythm>
         </track>
+
         <track id="5">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>1.989</duration>
+            <color>1</color>
+            <rythm>10000000</rythm>
         </track>
+
         <track id="6">
-            <duration>1</duration>
-            <color>0</color>
-            <rythm>10101010</ryhtm>
+            <duration>1.989</duration>
+            <color>2</color>
+            <rythm>10001000</rythm>
         </track>
     </family>
 </partition>

@@ -8,7 +8,6 @@ public class Family : MonoBehaviour {
 	public int[] drops;
 
 	void Start () {
-		
 	}
 	
 	void Update () {
