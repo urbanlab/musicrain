@@ -33,9 +33,9 @@ public class Engine : MonoBehaviour {
 		positions = new List<Vector3> ();
 
 		minX = TopLeft.transform.position.x;
-		maxX = BottomLeft.transform.position.x;
+		maxX = TopRight.transform.position.x;
 		minZ = TopLeft.transform.position.z;
-		maxZ = TopRight.transform.position.z;
+		maxZ = BottomLeft.transform.position.z;
 
 		actualFamily = 1;
 		InitializeDrops (actualFamily);
@@ -57,15 +57,21 @@ public class Engine : MonoBehaviour {
 		positions = new List<Vector3> ();
 		var myFamily = GameObject.Find ("Family" + familySelected).GetComponent<Family>();
 
+		for (int i = 0; i < myFamily.drops.Length ; i++) {
+			var newPosition = new Vector3(Random.Range(minX, maxX), height, Random.Range(minZ, maxZ));
+			while (newPosition.x < -0.1 && newPosition.z < 0.5) {
+				newPosition = new Vector3(Random.Range(minX, maxX), height, Random.Range(minZ, maxZ));
+			}
+			positions.Add(newPosition);
+		}
+
 		GenerateDrops (myFamily);
 	}
 
 	void GenerateDrops(Family myFamily) {
 		for (int i = 0; i < myFamily.drops.Length ; i++) {
 			var newDrop = Instantiate (Drop);
-			var newPosition = new Vector3(Random.Range(minX, maxX), height, Random.Range(minZ, maxZ));
-			positions.Add(newPosition);
-			newDrop.transform.position = newPosition;
+			newDrop.transform.position = positions[i];
 			var colorIndex = myFamily.drops [i];
 			newDrop.GetComponent<MeshRenderer> ().material.color = myFamily.colors [colorIndex];
 			drops.Add (newDrop);

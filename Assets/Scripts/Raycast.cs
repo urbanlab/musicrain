@@ -7,7 +7,6 @@ using UnityEngine.VR;
 
 public class Raycast : MonoBehaviour {
 
-	public float sightlength;
 	public float selectDelay;
 
 	private float startTime;
@@ -26,7 +25,7 @@ public class Raycast : MonoBehaviour {
 
 		Ray raydirection = new Ray (transform.position, transform.forward);
 		
-		if (Physics.Raycast(raydirection, out seen, sightlength)) {
+		if (Physics.Raycast(raydirection, out seen, Mathf.Infinity)) {
 			if (seen.collider.tag == "button") {
 				if (lookingAt == seen.collider.name) {
 					Debug.Log ("Keep looking at " + seen.collider.name + "...");
@@ -40,9 +39,6 @@ public class Raycast : MonoBehaviour {
 							Core.GetComponent<Engine>().InitializeDrops (familySelected);
 							isPressed = true;
 						}
-
-						
-						// un truc
 					}
 				} else {
 					startTime = Time.time;
@@ -51,7 +47,7 @@ public class Raycast : MonoBehaviour {
 					isPressed = false;
 				}
 			} else {
-				//Debug.Log ("Looking at nothing...");
+				Debug.Log ("Looking at nothing...");
 				lookingAt = "";
 			}
 		}
