@@ -8,7 +8,7 @@ using System.IO;
 [XmlRoot("Partition")]
 public class Partition {
 
-    public int BPM;
+    public float BPM;
 
     [XmlArray("Ambiances")]
     [XmlArrayItem("Ambiance")]

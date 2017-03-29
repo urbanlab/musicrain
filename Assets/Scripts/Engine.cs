@@ -5,11 +5,7 @@ using UnityEngine;
 public class Engine : MonoBehaviour {
 
 	public GameObject Drop;
-
 	public GameObject[] Families;
-
-	public float dropDelay = 1;
-
 	public float height = 1;
 
 	public GameObject TopLeft;
@@ -27,6 +23,13 @@ public class Engine : MonoBehaviour {
 	private float maxZ;
 	private int actualFamily;
 
+	private XMLReader _myReader;
+
+	private float BPM;
+	private float dropDelay;
+
+	private int[][] dropRythm;
+
 	void Start () {
 		startTime = Time.time;
 		drops = new List<GameObject> ();
@@ -40,13 +43,22 @@ public class Engine : MonoBehaviour {
 		actualFamily = 1;
 		InitializeDrops (actualFamily);
 
+		_myReader = GetComponent<XMLReader>();
+		//Debug.Log ("3 " + _myReader._myPartition.BPM);
+
+		//BPM = _myReader._myPartition.BPM;
+		BPM = 120;
+
+		dropDelay = 60/BPM;
+		Debug.Log ("dropDelay " + dropDelay);
+
 	}
 	
 	void Update () {
 		if (startTime + dropDelay < Time.time) {
 			startTime = Time.time;
 			var myFamily = GameObject.Find ("Family" + actualFamily).GetComponent<Family>();
-			GenerateDrops (myFamily);
+			GenerateDrops (actualFamily, myFamily);
 		}
 	}
 
@@ -59,22 +71,25 @@ public class Engine : MonoBehaviour {
 
 		for (int i = 0; i < myFamily.drops.Length ; i++) {
 			var newPosition = new Vector3(Random.Range(minX, maxX), height, Random.Range(minZ, maxZ));
-			while (newPosition.x < -0.1 && newPosition.z < 0.5) {
+			while (newPosition.x < -0.1 && newPosition.z < 0) {
 				newPosition = new Vector3(Random.Range(minX, maxX), height, Random.Range(minZ, maxZ));
 			}
 			positions.Add(newPosition);
 		}
 
-		GenerateDrops (myFamily);
+		GenerateDrops (familySelected, myFamily);
 	}
 
-	void GenerateDrops(Family myFamily) {
+	void GenerateDrops(int familySelected, Family myFamily) {
 		for (int i = 0; i < myFamily.drops.Length ; i++) {
 			var newDrop = Instantiate (Drop);
 			newDrop.transform.position = positions[i];
 			var colorIndex = myFamily.drops [i];
 			newDrop.GetComponent<MeshRenderer> ().material.color = myFamily.colors [colorIndex];
 			drops.Add (newDrop);
+			Debug.Log ("1 " + _myReader);
+			//Debug.Log ("2 " + _myReader._myPartition);
+			//Debug.Log ("Track duration : " + XMLReader.Partition.Families[familySelected].Tracks[i].Duration);
 		}
 		startTime = Time.time;	
 	}
