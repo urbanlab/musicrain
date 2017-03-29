@@ -5,14 +5,16 @@ using System.IO;
 
 public class XMLReader : MonoBehaviour
 {
-    public Partition Partition;
+    public Partition MyPartition;
 
-    void Start() {
-        Partition = Partition.Load(Path.Combine(Application.dataPath, "Resources/config.xml"));
+    public Partition ReadXML() {
+        MyPartition = Partition.Load(Path.Combine(Application.dataPath, "Resources/config.xml"));
         Debug.Log("XML read !");
-        //Debug.Log("Nb famille : " + Partition.Families.Count);
-        //foreach (var family in Partition.Families)
+        //Debug.Log("Nb famille : " + MyPartition.Ambiances.Count);
+        //foreach (var family in MyPartition.Ambiances)
         //    foreach (var track in family.Tracks)
         //        Debug.Log("Track rythm : " + track.Rythm);
+
+        return MyPartition;
     }
 }

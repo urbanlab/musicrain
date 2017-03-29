@@ -12,7 +12,7 @@ public class Partition {
 
     [XmlArray("Ambiances")]
     [XmlArrayItem("Ambiance")]
-    public List<Ambiance> Families = new List<Ambiance>();
+    public List<Ambiance> Ambiances = new List<Ambiance>();
 
     public static Partition Load(string path)
     {
