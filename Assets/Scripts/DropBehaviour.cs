@@ -25,9 +25,10 @@ public class DropBehaviour : MonoBehaviour {
         if (Time.time - startTime < 1f)
         {
             color.a = Time.time - startTime;
+            color.a *= 2;
             this.meshRenderer.material.color = color;
         }
-
+        transform.Translate(0f, -Speed*Time.deltaTime, 0f);
        // transform.position = new Vector3(transform.position.x, transform.position .y- Speed, transform.position.z);
 	}
 

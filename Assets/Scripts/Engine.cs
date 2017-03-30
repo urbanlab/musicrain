@@ -57,9 +57,10 @@ public class Engine : MonoBehaviour {
                     var newDrop = Instantiate(Drop);
                     newDrop.transform.position = positions[i];
                     newDrop.GetComponent<MeshRenderer>().material.color = myFamily.colors[track.Color];
-		            newDrop.GetComponent<Rigidbody>().velocity = new Vector3(0f, -height*(60 / _partition.BPM), 0f);//(60 / _partition.BPM);
-                    newDrop.transform.localScale = new Vector3(0.05f, 0.05f*track.Duration/2, 0.05f);
+		            //newDrop.GetComponent<Rigidbody>().velocity = new Vector3(0f, -height*(60 / _partition.BPM), 0f);//(60 / _partition.BPM);
+                    //newDrop.transform.localScale = new Vector3(0.05f, 0.05f*track.Duration/2, 0.05f); 
 		            newDrop.GetComponent<DropBehaviour>().Id = track.id;
+		            newDrop.GetComponent<DropBehaviour>().Speed = 0.1f;//-height * (60 / _partition.BPM);
                     Drops.Add(newDrop);
                 }
 		        i++;
