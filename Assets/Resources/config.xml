@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Partition>
-    <BPM>60</BPM>
+    <BPM>120</BPM>
     <Ambiances>
       <Ambiance id="1">
         <Tracks>
