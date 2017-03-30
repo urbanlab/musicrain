@@ -8,8 +8,8 @@ public class Engine : MonoBehaviour {
 	public GameObject[] Families;
     public int ActualFamily;
 
-    public float dropDelay = 1;
-	public float height = 1;
+	public float dropDelay;
+	public float height;
 
 	public GameObject TopLeft;
 	public GameObject TopRight;
@@ -60,7 +60,7 @@ public class Engine : MonoBehaviour {
 		            //newDrop.GetComponent<Rigidbody>().velocity = new Vector3(0f, -height*(60 / _partition.BPM), 0f);//(60 / _partition.BPM);
                     //newDrop.transform.localScale = new Vector3(0.05f, 0.05f*track.Duration/2, 0.05f); 
 		            newDrop.GetComponent<DropBehaviour>().Id = track.id;
-		            newDrop.GetComponent<DropBehaviour>().Speed = 0.1f;//-height * (60 / _partition.BPM);
+		            newDrop.GetComponent<DropBehaviour>().Speed = 1f;//-height * (60 / _partition.BPM);
                     Drops.Add(newDrop);
                 }
 		        i++;
