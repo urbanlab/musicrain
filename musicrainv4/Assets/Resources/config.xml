@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition>
+    <BPM>100</BPM>
+    <Ambiances>
+      <Ambiance id="note_">
+        <Tracks>
+          <Track id="1">
+            <Duration>1.989</Duration>
+            <Color>0</Color>
+            <Rythm>10101011</Rythm>
+          </Track>
+
+          <Track id="2">
+            <Duration>1.989</Duration>
+            <Color>1</Color>
+            <Rythm>10100010</Rythm>
+          </Track>
+
+          <Track id="3">
+            <Duration>1.414</Duration>
+            <Color>0</Color>
+            <Rythm>10101010</Rythm>
+          </Track>
+
+          <Track id="4">
+            <Duration>0.669</Duration>
+            <Color>0</Color>
+            <Rythm>10101010</Rythm>
+          </Track>
+
+          <Track id="5">
+            <Duration>0.606</Duration>
+            <Color>0</Color>
+            <Rythm>11111111</Rythm>
+          </Track>
+
+          <Track id="6">
+            <Duration>5.968</Duration>
+            <Color>2</Color>
+            <Rythm>10001010</Rythm>
+          </Track>
+
+          <Track id="7">
+            <Duration>1.989</Duration>
+            <Color>0</Color>
+            <Rythm>10001010</Rythm>
+          </Track>
+
+          <Track id="8">
+            <Duration>0.155</Duration>
+            <Color>0</Color>
+            <Rythm>10101010</Rythm>
+          </Track>
+        </Tracks>
+      </Ambiance>
+      <Ambiance id="percu_">
+        <Tracks>
+          <Track id="1">
+            <Duration>3.978</Duration>
+            <Color>0</Color>
+            <Rythm>10001000</Rythm>
+          </Track>
+
+          <Track id="2">
+            <Duration>7.957</Duration>
+            <Color>1</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="3">
+            <Duration>7.957</Duration>
+            <Color>1</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="4">
+            <Duration>7.957</Duration>
+            <Color>1</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="5">
+            <Duration>30.912</Duration>
+            <Color>2</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+          </Tracks>
+      </Ambiance>
+      <Ambiance id="nappe_">
+        <Tracks>
+          <Track id="1">
+            <Duration>1.989</Duration>
+            <Color>0</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="2">
+            <Duration>1.989</Duration>
+            <Color>1</Color>
+            <Rythm>10001000</Rythm>
+          </Track>
+
+          <Track id="3">
+            <Duration>7.957</Duration>
+            <Color>1</Color>
+            <Rythm>10001000</Rythm>
+          </Track>
+
+          <Track id="4">
+            <Duration>3.978</Duration>
+            <Color>2</Color>
+            <Rythm>10101010</Rythm>
+          </Track>
+
+          <Track id="5">
+            <Duration>1.989</Duration>
+            <Color>2</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="6">
+            <Duration>1.989</Duration>
+            <Color>1</Color>
+            <Rythm>10101010</Rythm>
+          </Track>
+
+          <Track id="6">
+            <Duration>1.989</Duration>
+            <Color>1</Color>
+            <Rythm>10101010</Rythm>
+          </Track>
+        </Tracks>
+      </Ambiance>
+      <Ambiance id="chelou_">
+        <Tracks>
+          <Track id="1">
+            <Duration>3.978</Duration>
+            <Color>0</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="2">
+            <Duration>7.957</Duration>
+            <Color>1</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="3">
+            <Duration>1.989</Duration>
+            <Color>1</Color>
+            <Rythm>10001000</Rythm>
+          </Track>
+
+          <Track id="4">
+            <Duration>3.978</Duration>
+            <Color>2</Color>
+            <Rythm>10001000</Rythm>
+          </Track>
+
+          <Track id="5">
+            <Duration>1.989</Duration>
+            <Color>1</Color>
+            <Rythm>10000000</Rythm>
+          </Track>
+
+          <Track id="6">
+            <Duration>1.989</Duration>
+            <Color>2</Color>
+            <Rythm>10001000</Rythm>
+          </Track>
+        </Tracks>
+      </Ambiance>
+    </Ambiances>
+</Partition>

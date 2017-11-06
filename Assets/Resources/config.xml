@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Partition>
-    <BPM>120</BPM>
+    <BPM>100</BPM>
     <Ambiances>
       <Ambiance id="1">
         <Tracks>
           <Track id="1">
             <Duration>1.989</Duration>
             <Color>0</Color>
-            <Rythm>10101010</Rythm>
+            <Rythm>10101011</Rythm>
           </Track>
 
           <Track id="2">
             <Duration>1.989</Duration>
-            <Color>0</Color>
-            <Rythm>10101010</Rythm>
+            <Color>1</Color>
+            <Rythm>10100010</Rythm>
           </Track>
 
           <Track id="3">
@@ -31,19 +31,19 @@
           <Track id="5">
             <Duration>0.606</Duration>
             <Color>0</Color>
-            <Rythm>10101010</Rythm>
+            <Rythm>11111111</Rythm>
           </Track>
 
           <Track id="6">
             <Duration>5.968</Duration>
             <Color>2</Color>
-            <Rythm>10000000</Rythm>
+            <Rythm>10001010</Rythm>
           </Track>
 
           <Track id="7">
             <Duration>1.989</Duration>
             <Color>0</Color>
-            <Rythm>10101010</Rythm>
+            <Rythm>10001010</Rythm>
           </Track>
 
           <Track id="8">
